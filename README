@@ -1,1 +1,61 @@
+
+XmlToolJson is a parser written in java with tools to import the JSON output to noSQL couchdb.
+
+
 https://github.com/downloads/jeanlopes/xmltooljson/xmltooljson.zip
+
+Thanks!
+
+Enjoy... =D
+
+small console application written in Java that helps to import xml files for couchdb, using a tag to separate it into documents
+
+PS.: to use it, remove tag <?xml version="1.0"?> and any root tags. There can be no tag comprising a tag sequence.
+
+Example
+
+wrong:
+
+<ul>
+
+<li>dog</li>
+
+<li>cow</li>
+
+<li>cat</li> 
+
+<li>bird</li>
+
+<li>monkey</li>
+
+<li>lion</li>
+
+<li>snake</li>
+
+<li>horse</li>
+
+</ul>
+
+
+
+correct: 
+
+<li>dog</li>
+
+<li>cow<li>
+
+<li>cat</li> 
+
+<li>bird</li>
+
+<li>monkey</li>
+
+<li>lion</li>
+
+<li>snake</li>
+
+<li>horse</li>
+
+
+
+where <li> is a split tag...
